@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MysticPixelGroup/static/css/main.f3d95c52.css",
+    "main.js": "/MysticPixelGroup/static/js/main.a0e9b097.js",
+    "index.html": "/MysticPixelGroup/index.html",
+    "main.f3d95c52.css.map": "/MysticPixelGroup/static/css/main.f3d95c52.css.map",
+    "main.a0e9b097.js.map": "/MysticPixelGroup/static/js/main.a0e9b097.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3d95c52.css",
+    "static/js/main.a0e9b097.js"
+  ]
+}
