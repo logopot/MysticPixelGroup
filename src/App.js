@@ -2,13 +2,13 @@ import Router from "./Router";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container } from "react-bootstrap";
-import Nav from "./components/Nav/Nav";
+// import Nav from "./components/Nav/Nav";
 
 const App = () => {
   return (
     <>
       <Container>
-        <Nav />
+        {/* <Nav /> */}
         <Router />
       </Container>
     </>
