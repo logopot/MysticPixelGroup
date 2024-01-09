@@ -3,7 +3,12 @@ const Home = () => {
   return (
     <div>
       pera
-      <img className="img-fluid" src={logo} alt="logo" />;
+      <img
+        className="img-fluid"
+        src={process.env.PUBLIC_URL + logo}
+        alt="logo"
+      />
+      ;
     </div>
   );
 };
