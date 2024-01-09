@@ -1,4 +1,4 @@
-import { Row } from "react-bootstrap/esm";
+import { Col, Row } from "react-bootstrap/esm";
 import logo from "../../assets/logo/logo.jpg";
 const Home = () => {
   return (
