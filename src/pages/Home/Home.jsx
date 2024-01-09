@@ -1,10 +1,12 @@
+import { Row } from "react-bootstrap/esm";
 import logo from "../../assets/logo/logo.jpg";
 const Home = () => {
   return (
-    <>
-      <h1>THIS IS HOME PAGE</h1>
-      <img src={logo} alt="." />
-    </>
+    <Row>
+      <Col>
+        <img className="img-fluid" src={logo} alt="." />
+      </Col>
+    </Row>
   );
 };
 
