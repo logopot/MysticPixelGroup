@@ -1,11 +1,5 @@
-import logo from "../../assets/logo/logo.jpg";
 const Home = () => {
-  return (
-    <div>
-      pera
-      {/* <img className="img-fluid" src={logo} alt="logo" />; */}
-    </div>
-  );
+  return <h1>THIS IS HOME PAGE</h1>;
 };
 
 export default Home;
