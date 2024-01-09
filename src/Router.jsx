@@ -8,8 +8,8 @@ const Router = () => {
   return (
     <ScrollToTop>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/second" element={<Home2 />} />
+        <Route path="/MysticPixelGroup" element={<Home />} />
+        <Route path="/MysticPixelGroup/second" element={<Home2 />} />
       </Routes>
     </ScrollToTop>
   );

@@ -6,13 +6,21 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <NavLink className="nav-link" to="/" activeclassname="active">
+          <NavLink
+            className="nav-link"
+            to="/MysticPixelGroup"
+            activeclassname="active"
+          >
             Home
           </NavLink>
         </li>
 
         <li>
-          <NavLink className="nav-link" to="/second" activeclassname="active">
+          <NavLink
+            className="nav-link"
+            to="/MysticPixelGroup/second"
+            activeclassname="active"
+          >
             Second
           </NavLink>
         </li>
