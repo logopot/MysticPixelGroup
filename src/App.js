@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Container>
-        <Nav />
+        {/* <Nav /> */}
         <Router />
       </Container>
     </>
