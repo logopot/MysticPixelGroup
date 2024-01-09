@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MysticPixelGroup/static/css/main.f3d95c52.css",
-    "main.js": "/MysticPixelGroup/static/js/main.8bf55e41.js",
+    "main.js": "/MysticPixelGroup/static/js/main.f61f2e62.js",
     "static/media/logo.jpg": "/MysticPixelGroup/static/media/logo.3c37e5548c6df58e56bc.jpg",
     "index.html": "/MysticPixelGroup/index.html",
     "main.f3d95c52.css.map": "/MysticPixelGroup/static/css/main.f3d95c52.css.map",
-    "main.8bf55e41.js.map": "/MysticPixelGroup/static/js/main.8bf55e41.js.map"
+    "main.f61f2e62.js.map": "/MysticPixelGroup/static/js/main.f61f2e62.js.map"
   },
   "entrypoints": [
     "static/css/main.f3d95c52.css",
-    "static/js/main.8bf55e41.js"
+    "static/js/main.f61f2e62.js"
   ]
 }
