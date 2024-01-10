@@ -1,10 +1,10 @@
 import { Col, Row } from "react-bootstrap/esm";
-import logo from "../../assets/logo/logo.jpg";
+import MainTitle from "../../components/MainTitle/MainTitle";
 const Home = () => {
   return (
     <Row>
-      <Col>
-        <img className="img-fluid" src={logo} alt="." />
+      <Col md={{ span: 8, offset: 2 }}>
+        <MainTitle title="Digital design and development agency" />
       </Col>
     </Row>
   );
