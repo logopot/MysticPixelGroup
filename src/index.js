@@ -1,10 +1,15 @@
 import ReactDOM from "react-dom/client";
-import "./global.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./globalStyles";
+import themes from "./themes/commonTheme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <App />
+    <ThemeProvider theme={themes}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </BrowserRouter>
 );
