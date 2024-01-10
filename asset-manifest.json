@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/MysticPixelGroup/static/css/main.8b955ac8.css",
-    "main.js": "/MysticPixelGroup/static/js/main.a043302a.js",
-    "static/media/logo.jpg": "/MysticPixelGroup/static/media/logo.3c37e5548c6df58e56bc.jpg",
+    "main.css": "/MysticPixelGroup/static/css/main.c2cab247.css",
+    "main.js": "/MysticPixelGroup/static/js/main.b4fa3ac7.js",
+    "static/media/body-bg.jpg": "/MysticPixelGroup/static/media/body-bg.13db9bd07a3b8625f4d2.jpg",
+    "static/media/logo.webp": "/MysticPixelGroup/static/media/logo.1ac4cb3b5651c6c65800.webp",
     "index.html": "/MysticPixelGroup/index.html",
-    "main.8b955ac8.css.map": "/MysticPixelGroup/static/css/main.8b955ac8.css.map",
-    "main.a043302a.js.map": "/MysticPixelGroup/static/js/main.a043302a.js.map"
+    "main.c2cab247.css.map": "/MysticPixelGroup/static/css/main.c2cab247.css.map",
+    "main.b4fa3ac7.js.map": "/MysticPixelGroup/static/js/main.b4fa3ac7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b955ac8.css",
-    "static/js/main.a043302a.js"
+    "static/css/main.c2cab247.css",
+    "static/js/main.b4fa3ac7.js"
   ]
 }
