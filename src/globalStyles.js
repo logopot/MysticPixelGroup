@@ -3,7 +3,7 @@ import { createGlobalStyle, css } from "styled-components";
 export default createGlobalStyle`${css`
   body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .container,
@@ -19,7 +19,6 @@ export default createGlobalStyle`${css`
   .body {
     position: relative;
     width: 100%;
-    height: 100vh;
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Adjust the background position as needed */
     background-repeat: no-repeat; /* Adjust the background repeat as needed */
@@ -33,7 +32,7 @@ export default createGlobalStyle`${css`
       top: 0;
       bottom: 0;
       width: 0.3px;
-      background-color: #f0f8ff12;
+      background-color: #313131;
     }
 
     &::before {
