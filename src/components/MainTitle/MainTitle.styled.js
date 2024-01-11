@@ -8,7 +8,6 @@ export const StyledMainTitle = styled.h1`
 
   @media (min-width: 769px) {
     font-size: 90px;
-    max-width: 770px;
     margin: 100px 0 150px;
   }
 `;
