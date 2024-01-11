@@ -106,12 +106,13 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLogoWrapper = styled.div`
-  margin-top: 15px;
+  margin-top: 25px;
   display: flex;
   align-items: center;
+  gap: 10px;
 
   img {
-    width: 100px;
+    width: 70px;
   }
 
   span {
