@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
   }
 
   #menuToggle a:hover {
-    color: #ff944e;
+    color: ${(props) => props.theme.accentColor};
   }
 
   #menuToggle input {
@@ -67,7 +67,7 @@ export const StyledNav = styled.nav`
   #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #ff944e;
+    background: ${(props) => props.theme.accentColor};
   }
 
   #menuToggle input:checked ~ span:nth-last-child(3) {
