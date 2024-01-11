@@ -18,7 +18,9 @@ const App = () => {
         <div className="vertical-line"></div>
         <Container fluid>
           <Nav />
-          <Router />
+          <Container>
+            <Router />
+          </Container>
         </Container>
       </div>
     </>
