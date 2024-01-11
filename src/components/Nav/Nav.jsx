@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledLogoWrapper, StyledNav } from "./Nav.styled";
 import { Col, Row } from "react-bootstrap/esm";
-import logo from "../../assets/logo/logo1.webp";
+import logo from "../../assets/logo/logo.webp";
 import background from "../../assets/body-bg/body-bg.jpg";
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
             <ul
               id="menu"
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${background})`,
                 backgroundSize: "cover",
               }}
             >
