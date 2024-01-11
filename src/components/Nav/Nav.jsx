@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledLogoWrapper, StyledNav } from "./Nav.styled";
 import { Col, Row } from "react-bootstrap/esm";
-import logo from "../../assets/logo/logo.webp";
+import logo from "../../assets/logo/logo1.webp";
 import background from "../../assets/body-bg/body-bg.jpg";
 
 const Nav = () => {

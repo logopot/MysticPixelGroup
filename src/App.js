@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container } from "react-bootstrap";
 
-import background from "./assets/body-bg/body-bg.jpg";
+import background from "./assets/body-bg/body-bg.webp";
 import Nav from "./components/Nav/Nav";
 
 const App = () => {
