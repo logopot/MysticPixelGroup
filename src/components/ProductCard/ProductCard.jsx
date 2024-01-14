@@ -85,7 +85,7 @@ const ProductCard = () => {
             escape from a massive pixel explosion. Shoot your way through the
             enemies, asteroids, and debris, and collect power-ups, upgrades, and
             bonuses. The pixel blast is getting closer every second, so you have
-            to hurry and reach the safe zone before it’s too late.
+            to hurry and reach the safe zone before it's too late.
           </StyledDescription>
           <LinkLabel url="/MysticPixelGroup/MysticPixel" label="Go beyond" />
         </Col>
