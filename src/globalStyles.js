@@ -4,6 +4,7 @@ export default createGlobalStyle`${css`
   body {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
+    color: ${(props) => props.theme.textColor};
   }
 
   .container,

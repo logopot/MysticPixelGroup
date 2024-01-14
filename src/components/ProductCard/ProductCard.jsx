@@ -18,13 +18,13 @@ const ProductCard = () => {
     <>
       <Row>
         <Col md={6} className="pe-md-5">
-          <a href="/">
+          <a href="/MysticPixelGroup/MysticPixel">
             <StyledImage className="img-fluid" src={image} alt="product" />
           </a>
         </Col>
         <Col className="ps-md-5 pt-5 pt-md-0">
           <StyledCathegoryTag>Puzzle</StyledCathegoryTag>
-          <StyledTitleLink href="/">
+          <StyledTitleLink href="/MysticPixelGroup/MysticPixel">
             <StyledTitle>Mystic pixel</StyledTitle>
           </StyledTitleLink>
           <StyledDescription>
@@ -34,7 +34,10 @@ const ProductCard = () => {
             mystic pixel group and their mysterious experiments.
           </StyledDescription>
 
-          <LinkLabel url="/MysticPixelGroup" label="Discover more" />
+          <LinkLabel
+            url="/MysticPixelGroup/MysticPixel"
+            label="Discover more"
+          />
         </Col>
       </Row>
 
