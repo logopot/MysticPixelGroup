@@ -6,7 +6,7 @@ import GlobalStyle from "./globalStyles";
 import themes from "./themes/commonTheme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/MysticPixelGroup">
     <ThemeProvider theme={themes}>
       <GlobalStyle />
       <App />
