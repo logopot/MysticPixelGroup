@@ -18,13 +18,13 @@ const ProductCard = () => {
     <>
       <Row>
         <Col md={6} className="pe-md-5">
-          <a href="/MysticPixelGroup/MysticPixel">
+          <a href="/MysticPixel">
             <StyledImage className="img-fluid" src={image} alt="product" />
           </a>
         </Col>
         <Col className="ps-md-5 pt-5 pt-md-0">
           <StyledCathegoryTag>Puzzle</StyledCathegoryTag>
-          <StyledTitleLink href="/MysticPixelGroup/MysticPixel">
+          <StyledTitleLink href="/MysticPixel">
             <StyledTitle>Mystic pixel</StyledTitle>
           </StyledTitleLink>
           <StyledDescription>
@@ -34,10 +34,7 @@ const ProductCard = () => {
             mystic pixel group and their mysterious experiments.
           </StyledDescription>
 
-          <LinkLabel
-            url="/MysticPixelGroup/MysticPixel"
-            label="Discover more"
-          />
+          <LinkLabel url="/MysticPixel" label="Discover more" />
         </Col>
       </Row>
 
@@ -46,7 +43,7 @@ const ProductCard = () => {
       <Row className="align-items-end">
         <Col className="pe-md-5 pt-5 pt-md-0 order-2 order-md-1">
           <StyledCathegoryTag>Platform</StyledCathegoryTag>
-          <StyledTitleLink href="/MysticPixelGroup/MysticPixel">
+          <StyledTitleLink href="/MysticPixel">
             <StyledTitle>Pixel Quest</StyledTitle>
           </StyledTitleLink>
           <StyledDescription>
@@ -55,13 +52,10 @@ const ProductCard = () => {
             abilities, and face challenging bosses as you uncover the mystery
             behind the mystic pixel group.
           </StyledDescription>
-          <LinkLabel
-            url="/MysticPixelGroup/MysticPixel"
-            label="Explore the details"
-          />
+          <LinkLabel url="/MysticPixel" label="Explore the details" />
         </Col>
         <Col md={6} className="ps-md-5 order-1 order-md-2">
-          <a href="/MysticPixelGroup/MysticPixel">
+          <a href="/MysticPixel">
             <StyledImage className="img-fluid" src={image2} alt="product" />
           </a>
         </Col>
@@ -71,13 +65,13 @@ const ProductCard = () => {
 
       <Row>
         <Col lg={12} xl={7} className="pe-xl-5">
-          <a href="/MysticPixelGroup/MysticPixel">
+          <a href="/MysticPixel">
             <StyledImage className="img-fluid" src={image3} alt="product" />
           </a>
         </Col>
         <Col lg={12} xl={5} className="pt-5 pt-xl-0">
           <StyledCathegoryTag>Shooter</StyledCathegoryTag>
-          <StyledTitleLink href="/MysticPixelGroup/MysticPixel">
+          <StyledTitleLink href="/MysticPixel">
             <StyledTitle>Pixel Blast: The Final Countdown</StyledTitle>
           </StyledTitleLink>
           <StyledDescription>
@@ -87,7 +81,7 @@ const ProductCard = () => {
             bonuses. The pixel blast is getting closer every second, so you have
             to hurry and reach the safe zone before it's too late.
           </StyledDescription>
-          <LinkLabel url="/MysticPixelGroup/MysticPixel" label="Go beyond" />
+          <LinkLabel url="/MysticPixel" label="Go beyond" />
         </Col>
       </Row>
 
