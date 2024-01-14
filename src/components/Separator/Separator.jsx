@@ -1,8 +1,8 @@
 import React from "react";
 import { SeparatorDiv } from "./Separator.styled";
 
-const Separator = ({ marginTop }) => {
-  return <SeparatorDiv marginTop={marginTop} />;
+const Separator = ({ variant }) => {
+  return <SeparatorDiv variant={variant} />;
 };
 
 export default Separator;

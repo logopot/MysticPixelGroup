@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 
 import background from "./assets/body-bg/body-bg.jpg";
 import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Container>
             <Router />
           </Container>
+          <Footer />
         </Container>
       </div>
     </>

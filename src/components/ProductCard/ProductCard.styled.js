@@ -6,9 +6,24 @@ export const StyledCathegoryTag = styled.p`
 `;
 
 export const StyledTitle = styled.h2`
-  font-size: 60px;
-  color: ${(props) => props.theme.textColor};
+  font-size: 40px;
   font-weight: 600;
+  margin: 30px 0;
+  transition: color 0.5s ease;
+
+  @media (min-width: 992px) {
+    font-size: 60px;
+  }
+`;
+
+export const StyledTitleLink = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.textColor};
+
+  &:hover > ${StyledTitle} {
+    transition: color 0.5s ease;
+    color: ${(props) => props.theme.accentColor};
+  }
 `;
 
 export const StyledDescription = styled.p`
@@ -16,10 +31,6 @@ export const StyledDescription = styled.p`
   font-size: 16px;
   line-height: 1.8;
   color: ${(props) => props.theme.textColor};
-
-  @media (min-width: 768px) {
-    margin: 30px 0 70px;
-  }
 `;
 
 export const StyledLink = styled.a`
@@ -63,15 +74,5 @@ export const StyledLink = styled.a`
 
   &:hover::before {
     width: 100%;
-  }
-
-  .dot {
-    position: absolute;
-    top: 11px;
-    right: -14px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${(props) => props.theme.accentColor};
   }
 `;

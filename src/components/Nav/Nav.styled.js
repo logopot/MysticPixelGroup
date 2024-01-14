@@ -7,7 +7,7 @@ export const StyledNav = styled.nav`
     position: absolute;
     top: 50px;
     right: 30px;
-    z-index: 1;
+    z-index: 2;
     user-select: none;
     width: 50px;
   }
@@ -84,8 +84,7 @@ export const StyledNav = styled.nav`
     left: -154px;
     width: 304px;
     margin: -80px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
+    padding: 125px 50px 50px;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;

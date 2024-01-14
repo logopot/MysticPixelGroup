@@ -2,7 +2,7 @@ import React from "react";
 import { StyledLogoWrapper, StyledNav } from "./Nav.styled";
 import { Col, Row } from "react-bootstrap/esm";
 import logo from "../../assets/logo/logo.webp";
-import background from "../../assets/body-bg/body-bg.jpg";
+import background from "../../assets/body-bg/body-bg-nav.jpg";
 
 const Nav = () => {
   return (
@@ -19,22 +19,25 @@ const Nav = () => {
             <ul
               id="menu"
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${background})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${background})`,
                 backgroundSize: "cover",
               }}
             >
-              <a href="/">
-                <li>Home</li>
-              </a>
-              <a href="/">
-                <li>About</li>
-              </a>
-              <a href="/">
-                <li>Info</li>
-              </a>
-              <a href="/">
-                <li>Contact</li>
-              </a>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Games</a>
+              </li>
+              <li>
+                <a href="/">Websites</a>
+              </li>
+              <li>
+                <a href="/">Applications</a>
+              </li>
+              <li>
+                <a href="/">Contact</a>
+              </li>
             </ul>
           </div>
           <StyledLogoWrapper>

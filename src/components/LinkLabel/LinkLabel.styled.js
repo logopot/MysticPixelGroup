@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledLinkLabel = styled.a`
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 2px;
   position: relative;

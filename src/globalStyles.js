@@ -9,7 +9,11 @@ export default createGlobalStyle`${css`
   .container,
   .container-fluid {
     position: relative;
-    z-index: 0;
+    z-index: 1;
+  }
+
+  a:hover {
+    color: unset;
   }
 
   .active {
