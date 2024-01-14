@@ -76,3 +76,11 @@ export const StyledLink = styled.a`
     width: 100%;
   }
 `;
+
+export const StyledImage = styled.img`
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+`;

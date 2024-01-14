@@ -6,6 +6,7 @@ import image3 from "../../assets/products/product3.jpg";
 import {
   StyledCathegoryTag,
   StyledDescription,
+  StyledImage,
   StyledTitle,
   StyledTitleLink,
 } from "./ProductCard.styled";
@@ -18,7 +19,7 @@ const ProductCard = () => {
       <Row>
         <Col md={6} className="pe-md-5">
           <a href="/">
-            <img className="img-fluid" src={image} alt="product" />
+            <StyledImage className="img-fluid" src={image} alt="product" />
           </a>
         </Col>
         <Col className="ps-md-5 pt-5 pt-md-0">
@@ -55,7 +56,7 @@ const ProductCard = () => {
         </Col>
         <Col md={6} className="ps-md-5 order-1 order-md-2">
           <a href="/">
-            <img className="img-fluid" src={image2} alt="product" />
+            <StyledImage className="img-fluid" src={image2} alt="product" />
           </a>
         </Col>
       </Row>
@@ -65,7 +66,7 @@ const ProductCard = () => {
       <Row>
         <Col lg={12} xl={7} className="pe-xl-5">
           <a href="/">
-            <img className="img-fluid" src={image3} alt="product" />
+            <StyledImage className="img-fluid" src={image3} alt="product" />
           </a>
         </Col>
         <Col lg={12} xl={5} className="pt-5 pt-xl-0">

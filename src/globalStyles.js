@@ -36,7 +36,7 @@ export default createGlobalStyle`${css`
       top: 0;
       bottom: 0;
       width: 0.3px;
-      background-color: #313131;
+      background-color: ${(props) => props.theme.lineColor};
     }
 
     &::before {
