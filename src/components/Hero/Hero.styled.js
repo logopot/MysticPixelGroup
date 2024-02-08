@@ -4,7 +4,7 @@ import { breakpoints } from "../../themes/commonTheme";
 
 export const StyledSection = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   position: relative;
 
   &::before {
@@ -38,7 +38,7 @@ export const StyledSection = styled.section`
 
 export const StyledHeroInner = styled.div`
   position: absolute;
-  bottom: 150px;
+  bottom: 80px;
   left: 30px;
   z-index: 3;
 
