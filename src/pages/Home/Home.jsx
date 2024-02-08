@@ -1,19 +1,19 @@
-import { Col, Row } from "react-bootstrap/esm";
-import MainTitle from "../../components/MainTitle/MainTitle";
+import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Hero from "../../components/Hero/Hero";
 const Home = () => {
   return (
     <>
-      <Row>
-        <Col>
-          <MainTitle title="Game design and development agency" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <ProductCard />
-        </Col>
-      </Row>
+      <Container fluid className="p-0">
+        <Hero />
+      </Container>
+      <Container>
+        <Row className="mt-5">
+          <Col>
+            <ProductCard />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

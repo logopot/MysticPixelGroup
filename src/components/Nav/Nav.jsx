@@ -1,50 +1,83 @@
 import React from "react";
-import { StyledLogoWrapper, StyledNav } from "./Nav.styled";
-import { Col, Row } from "react-bootstrap/esm";
+import {
+  StyledLogoWrapper,
+  StyledNav,
+  StyledDiv,
+  StyledUl,
+} from "./Nav.styled";
+import { Col, Row } from "react-bootstrap";
 import logo from "../../assets/logo/logo.webp";
-import background from "../../assets/body-bg/body-bg-nav.jpg";
+import StickyNavbar from "react-sticky-navbar";
+import { useTheme } from "styled-components";
+
+// const navBarBgColor = "#010109";
 
 const Nav = () => {
+  // const [menuOpen, setMenuOpen] = useState(false);
+
+  // const handleMenuToggle = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
+
+  // // Apply 'overflow: hidden' to the body when menu is open
+  // document.body.style.overflowY = menuOpen ? "hidden" : "auto";
+  const theme = useTheme();
+
   return (
     <Row>
       <Col>
-        <StyledNav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
+        <StickyNavbar stickyBackground={theme.navBarBgColor} showOnScrollDown>
+          <StyledNav role="navigation">
+            <StyledDiv className="hamburger-menu">
+              <input
+                type="checkbox"
+                id="menu__toggle"
+                // checked={menuOpen}
+                // onChange={handleMenuToggle}
+              />
+              <label className="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
 
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <ul
-              id="menu"
-              style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${background})`,
-                backgroundSize: "cover",
-              }}
-            >
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">Games</a>
-              </li>
-              <li>
-                <a href="/">Websites</a>
-              </li>
-              <li>
-                <a href="/">Applications</a>
-              </li>
-              <li>
-                <a href="/">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <StyledLogoWrapper>
-            <img src={logo} alt="logo" />
-            <span>Mystic Pixel Group</span>
-          </StyledLogoWrapper>
-        </StyledNav>
+              <StyledUl className="menu__box">
+                <li>
+                  <a className="menu__item" href="/">
+                    The gameplay
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/">
+                    About MPG
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/">
+                    History
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/">
+                    Portfolio
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/">
+                    Join
+                  </a>
+                </li>
+                <li>
+                  <a className="menu__item" href="/">
+                    Contact
+                  </a>
+                </li>
+              </StyledUl>
+            </StyledDiv>
+            <StyledLogoWrapper>
+              <img src={logo} alt="logo" />
+              <span>Mystic Pixel Group</span>
+            </StyledLogoWrapper>
+          </StyledNav>
+        </StickyNavbar>
       </Col>
     </Row>
   );

@@ -21,6 +21,27 @@ export default createGlobalStyle`${css`
     color: ${(props) => props.theme.primaryColor} !important;
   }
 
+  .sticky-navbar-nav {
+    padding-left: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: ${(props) => props.theme.scrollBarBGColor};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.scrollBarBGColorThumb};
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${(props) => props.theme.scrollBarBGColorThumbHover};
+  }
+
+  ::selection {
+    background-color: ${(props) => props.theme.accentColor};
+  }
+
   .body {
     position: relative;
     width: 100%;

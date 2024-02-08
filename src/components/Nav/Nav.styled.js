@@ -1,117 +1,138 @@
 import styled from "styled-components";
+import { breakpoints } from "../../themes/commonTheme";
 
 export const StyledNav = styled.nav`
-  #menuToggle {
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(-45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+
+  .menu__btn {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 30px;
-    z-index: 2;
-    user-select: none;
-    width: 50px;
-  }
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 20px; /* Change from left: 20px to right: 20px */
 
-  #menuToggle a {
-    text-decoration: none;
-    color: ${(props) => props.theme.textColor};
-
-    transition: color 0.3s ease;
-  }
-
-  #menuToggle a:hover {
-    color: ${(props) => props.theme.accentColor};
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 60px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
+    width: 52px;
+    height: 26px;
 
     cursor: pointer;
-
-    opacity: 0;
-    z-index: 2;
-
-    -webkit-touch-callout: none;
-  }
-
-  #menuToggle span {
-    display: block;
-    width: 50px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background: ${(props) => props.theme.textColor};
-    border-radius: 3px;
-
     z-index: 1;
 
-    transform-origin: 20px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    ${breakpoints.up("sm")} {
+      top: 40px;
+    }
   }
 
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: ${(props) => props.theme.accentColor};
-  }
-
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, 5px);
-  }
-
-  #menu {
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
     position: absolute;
-    left: -154px;
-    width: 304px;
-    margin: -80px 0 0 -50px;
-    padding: 125px 50px 50px;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(104%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    width: 100%;
+    height: 2px;
+
+    background-color: ${(props) => props.theme.accentColor};
+
+    transition-duration: 0.25s;
   }
 
-  #menu li {
-    padding: 10px 0;
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
   }
 
-  /*
- * And let's slide it in from the left
- */
-  #menuToggle input:checked ~ ul {
-    transform: none;
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    color: ${(props) => props.theme.textColor};
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition-duration: 0.25s;
+    text-transform: uppercase;
+  }
+
+  .menu__item:hover {
+    color: ${(props) => props.theme.accentColor};
   }
 `;
 
+export const StyledUl = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%; /* Change from left: -100% to right: -100% */
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: ${(props) => props.theme.navBarBgColor};
+
+  transition-duration: 0.25s;
+
+  li {
+    display: flex;
+    flex-grow: 0;
+  }
+
+  ${breakpoints.up("sm")} {
+    width: 560px;
+  }
+`;
+
+export const StyledDiv = styled.div`
+  position: absolute;
+`;
+
 export const StyledLogoWrapper = styled.div`
-  margin-top: 25px;
   display: flex;
   align-items: center;
   gap: 10px;
 
   img {
-    width: 70px;
+    width: 60px;
+
+    ${breakpoints.up("sm")} {
+      width: 70px;
+    }
   }
 
   span {
