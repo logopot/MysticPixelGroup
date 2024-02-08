@@ -1,11 +1,9 @@
 import Router from "./Router";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { Container } from "react-bootstrap";
-
+import Nav from "../src/components/Nav/Nav";
 import background from "./assets/body-bg/body-bg.jpg";
-import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import { Container } from "react-bootstrap";
 
 const App = () => {
   return (
@@ -13,15 +11,13 @@ const App = () => {
       <div
         className="body"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(${background})`,
+          backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.95) 50%), url(${background})`,
         }}
       >
         <div className="vertical-line"></div>
-        <Container fluid>
+        <Container fluid className="p-0">
           <Nav />
-          <Container>
-            <Router />
-          </Container>
+          <Router />
           <Footer />
         </Container>
       </div>
