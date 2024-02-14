@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MysticPixelGroup/static/css/main.61088cff.css",
-    "main.js": "/MysticPixelGroup/static/js/main.021e2ca9.js",
+    "main.js": "/MysticPixelGroup/static/js/main.ab58dbec.js",
     "static/media/body-bg.jpg": "/MysticPixelGroup/static/media/body-bg.86af79d7f37a7307c653.jpg",
     "static/media/product3.jpg": "/MysticPixelGroup/static/media/product3.fbc39f0cca610941d145.jpg",
     "static/media/hero.jpg": "/MysticPixelGroup/static/media/hero.2feab959ca4855ed21d2.jpg",
@@ -14,10 +14,10 @@
     "static/media/logo.webp": "/MysticPixelGroup/static/media/logo.41bec55d30ca7919f2bb.webp",
     "index.html": "/MysticPixelGroup/index.html",
     "main.61088cff.css.map": "/MysticPixelGroup/static/css/main.61088cff.css.map",
-    "main.021e2ca9.js.map": "/MysticPixelGroup/static/js/main.021e2ca9.js.map"
+    "main.ab58dbec.js.map": "/MysticPixelGroup/static/js/main.ab58dbec.js.map"
   },
   "entrypoints": [
     "static/css/main.61088cff.css",
-    "static/js/main.021e2ca9.js"
+    "static/js/main.ab58dbec.js"
   ]
 }
