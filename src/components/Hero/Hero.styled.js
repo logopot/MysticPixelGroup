@@ -6,6 +6,7 @@ export const StyledSection = styled.section`
   width: 100vw;
   height: 100dvh;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
