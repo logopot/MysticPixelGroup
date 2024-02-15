@@ -15,7 +15,7 @@ export const StyledSection = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("${background}") no-repeat center center;
+    background: url("${background}") no-repeat top center;
     background-size: cover;
     animation: zoom 50s infinite alternate;
     animation-timing-function: linear;
