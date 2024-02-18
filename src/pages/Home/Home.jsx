@@ -9,11 +9,9 @@ const Home = () => {
       <Container fluid className="p-0">
         <Hero />
       </Container>
-      <Container>
+      <Container className="p-3">
         <Separator variant="plusMargin" />
-        <Row className="mt-5">
-          <ServiceCardGroup />
-        </Row>
+        <ServiceCardGroup />
       </Container>
     </>
   );

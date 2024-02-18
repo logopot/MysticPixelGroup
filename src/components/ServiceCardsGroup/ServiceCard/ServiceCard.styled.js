@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Label from "../../Label/Label";
 
 export const StyledServiceCard = styled.a`
   display: flex;
@@ -8,6 +9,7 @@ export const StyledServiceCard = styled.a`
   background-color: black;
   color: ${(props) => props.theme.textColor};
   border: 2px solid ${(props) => props.theme.accentColor};
+  margin-bottom: 30px;
 
   padding: 30px;
   cursor: pointer;
@@ -20,18 +22,19 @@ export const StyledServiceCard = styled.a`
 `;
 
 export const StyledIconWrapper = styled.div`
-  img {
-    width: 80px;
-  }
+  display: flex;
+  font-size: 60px;
+  color: ${(props) => props.theme.accentColor};
 `;
-export const StyledLabelWrapper = styled.div`
-  h2 {
-    font-size: 20px;
-    color: ${(props) => props.theme.colorWhite} !important;
 
-    &:first-of-type {
-      color: ${(props) => props.theme.accentColor} !important;
-      font-weight: 700;
-    }
+export const StyledLabel = styled(Label)`
+  font-size: 20px;
+  color: ${(props) => props.theme.colorWhite} !important;
+
+  &:first-of-type {
+    color: ${(props) => props.theme.accentColor} !important;
+    font-weight: 700;
   }
 `;
+
+export const StyledLabelWrapper = styled.div``;

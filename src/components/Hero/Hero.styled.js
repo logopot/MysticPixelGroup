@@ -4,7 +4,7 @@ import { breakpoints } from "../../themes/commonTheme";
 
 export const StyledSection = styled.section`
   width: 100vw;
-  height: 100dvh;
+  height: 100lvh;
   position: relative;
   overflow: hidden;
 
@@ -24,6 +24,21 @@ export const StyledSection = styled.section`
     ${breakpoints.up("md")} {
       animation: zoom 100s infinite alternate;
     }
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(1, 1, 1, 1) 96%,
+      rgba(255, 255, 257, 0) 100%
+    );
   }
 
   @keyframes zoom {

@@ -3,18 +3,16 @@ import {
   StyledIconWrapper,
   StyledLabelWrapper,
   StyledServiceCard,
+  StyledLabel,
 } from "./ServiceCard.styled";
-import Label from "../../Label/Label";
 
-const ServiceCard = ({ icon, titleNum, title, url }) => {
+const ServiceCard = ({ titleNum, title, url, iconName }) => {
   return (
     <StyledServiceCard href={url}>
-      <StyledIconWrapper>
-        <img className="img-fluid" src={icon} alt={title} />
-      </StyledIconWrapper>
+      <StyledIconWrapper>{iconName}</StyledIconWrapper>
       <StyledLabelWrapper className="title-container">
-        <Label tag="h2" text={titleNum} />
-        <Label tag="h2" text={title} />
+        <StyledLabel tag="h2" text={titleNum} />
+        <StyledLabel tag="h2" text={title} />
       </StyledLabelWrapper>
     </StyledServiceCard>
   );
