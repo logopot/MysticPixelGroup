@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <StyledFooter>
-      <p className="mb-0">
+      <p className="mb-0 ms-4">
         &copy; {currentYear} MysticPixelGroup. All rights reserved.
       </p>
     </StyledFooter>
