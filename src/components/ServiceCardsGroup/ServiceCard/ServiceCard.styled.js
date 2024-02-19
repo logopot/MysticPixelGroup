@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import Label from "../../Label/Label";
+import { breakpoints } from "../../../themes/commonTheme";
 
 export const StyledServiceCard = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 500px;
+  min-height: 300px;
   background-color: black;
   color: ${(props) => props.theme.textColor};
   border: 2px solid ${(props) => props.theme.accentColor};
@@ -18,6 +19,10 @@ export const StyledServiceCard = styled.a`
   &:hover {
     border: 2px solid ${(props) => props.theme.textColor};
     text-decoration: none;
+  }
+
+  ${breakpoints.up("sm")} {
+    min-height: 500px;
   }
 `;
 

@@ -4,7 +4,7 @@ import { breakpoints } from "../../themes/commonTheme";
 
 export const StyledSection = styled.section`
   width: 100vw;
-  height: 100lvh;
+  height: 100svh;
   position: relative;
   overflow: hidden;
 

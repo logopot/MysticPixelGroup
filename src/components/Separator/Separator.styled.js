@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { breakpoints } from "../../themes/commonTheme";
 
 export const SeparatorDiv = styled.div`
   height: 1px;
@@ -8,7 +9,7 @@ export const SeparatorDiv = styled.div`
     css`
       margin-top: 60px;
 
-      @media (min-width: 992px) {
+      ${breakpoints.up("lg")} {
         margin-top: -180px;
       }
     `}
