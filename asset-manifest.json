@@ -1,19 +1,16 @@
 {
   "files": {
     "main.css": "/MysticPixelGroup/static/css/main.61088cff.css",
-    "main.js": "/MysticPixelGroup/static/js/main.6efac102.js",
-    "static/media/product3.jpg": "/MysticPixelGroup/static/media/product3.fbc39f0cca610941d145.jpg",
+    "main.js": "/MysticPixelGroup/static/js/main.ef794fe6.js",
     "static/media/body-bg.jpg": "/MysticPixelGroup/static/media/body-bg.bea53dd068681b0bdbff.jpg",
-    "static/media/product.jpg": "/MysticPixelGroup/static/media/product.87344a511fa196e63a42.jpg",
-    "static/media/product2.jpg": "/MysticPixelGroup/static/media/product2.ff42df66d6fcc881a37d.jpg",
     "static/media/hero.jpg": "/MysticPixelGroup/static/media/hero.582a79b456536cc2d8d7.jpg",
     "static/media/logo.webp": "/MysticPixelGroup/static/media/logo.41bec55d30ca7919f2bb.webp",
     "index.html": "/MysticPixelGroup/index.html",
     "main.61088cff.css.map": "/MysticPixelGroup/static/css/main.61088cff.css.map",
-    "main.6efac102.js.map": "/MysticPixelGroup/static/js/main.6efac102.js.map"
+    "main.ef794fe6.js.map": "/MysticPixelGroup/static/js/main.ef794fe6.js.map"
   },
   "entrypoints": [
     "static/css/main.61088cff.css",
-    "static/js/main.6efac102.js"
+    "static/js/main.ef794fe6.js"
   ]
 }
