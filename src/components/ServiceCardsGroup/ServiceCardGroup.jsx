@@ -1,12 +1,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import { Col, Row } from "react-bootstrap";
-import {
-  CiBezier,
-  CiGrid42,
-  CiMicrophoneOn,
-  CiWavePulse1,
-} from "react-icons/ci";
+import { PiCode, PiMegaphone, PiPenNib, PiChartLine } from "react-icons/pi";
 import MainTitle from "../MainTitle/MainTitle";
 
 const ServiceCardGroup = () => {
@@ -20,28 +15,28 @@ const ServiceCardGroup = () => {
       <Row>
         <Col sm={6} md={6} lg={3}>
           <ServiceCard
-            iconName={<CiGrid42 />}
+            iconName={<PiCode />}
             titleNum="01"
             title="Development"
           />
         </Col>
         <Col sm={6} md={6} lg={3}>
           <ServiceCard
-            iconName={<CiMicrophoneOn />}
+            iconName={<PiMegaphone />}
             titleNum="02"
             title="Marketing"
           />
         </Col>
         <Col sm={6} md={6} lg={3}>
           <ServiceCard
-            iconName={<CiBezier />}
+            iconName={<PiPenNib />}
             titleNum="03"
             title="UI Design"
           />
         </Col>
         <Col sm={6} md={6} lg={3}>
           <ServiceCard
-            iconName={<CiWavePulse1 />}
+            iconName={<PiChartLine />}
             titleNum="04"
             title="Data & Analytics"
           />

@@ -17,6 +17,6 @@ export const SeparatorDiv = styled.div`
   ${(props) =>
     props.variant === "plusMargin" &&
     css`
-      margin-top: 80px;
+      margin-top: 90px;
     `}
 `;

@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Icons
 
-https://react-icons.github.io/react-icons/icons/ci/
+https://react-icons.github.io/react-icons/icons/pi/

@@ -27,8 +27,9 @@ export const StyledServiceCard = styled.a`
   color: ${(props) => props.theme.textColor};
   border: 2px solid ${(props) => props.theme.accentColor};
   margin-bottom: 30px;
+  border-radius: 40px;
 
-  padding: 30px;
+  padding: 50px 50px 50px 56px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
