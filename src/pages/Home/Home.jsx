@@ -2,7 +2,8 @@ import { Container } from "react-bootstrap";
 import Hero from "../../components/Hero/Hero";
 import ServiceCardGroup from "../../components/ServiceCardsGroup/ServiceCardGroup";
 import Separator from "../../components/Separator/Separator";
-import MyComponent from "../../components/AboutUs/AboutUs";
+import AboutUs from "../../components/AboutUs/AboutUs";
+import WhyUs from "../../components/WhyUs/WhyUs";
 const Home = () => {
   return (
     <>
@@ -14,7 +15,11 @@ const Home = () => {
         <ServiceCardGroup />
       </Container>
       <Separator variant="plusMargin" />
-      <MyComponent />
+      <AboutUs />
+      <Separator variant="plusMargin" />
+      <Container>
+        <WhyUs />
+      </Container>
     </>
   );
 };
