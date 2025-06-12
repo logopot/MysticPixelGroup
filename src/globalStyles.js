@@ -69,4 +69,55 @@ export default createGlobalStyle`${css`
       left: 70%;
     }
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+
+  /* Additional styles (optional) */
+  p {
+    font-size: 1rem; /* Default paragraph font size */
+    line-height: 1.6;
+  }
 `}`;

@@ -15,8 +15,8 @@ export const breakpoints = {
 
 const themes = {
   primaryColor: "#e57a99",
-  textColor: "#fcfff7",
-  accentColor: "#4CC9F0", //vivid sky blue
+  textColor: "#F6F7F8",
+  accentColor: "#20A4F3", //Celestial blue
   navBarBgColor: "#010109",
   scrollBarBGColor: "#010109",
   scrollBarBGColorThumb: "#003049",
